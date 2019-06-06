@@ -17,9 +17,9 @@ namespace ForTest {
 	class Program {
 		static void Main(string[] args) {
 
-			SomeClass<int> someClass = new SomeClass<int>();                // działa dobrze
-			SomeClass<string> someClass = new SomeClass<string>();			// zgodnie z potrzebą T musi być numeryczne 
-			SomeOtherClass<int> someOtherClass = new SomeOtherClass<int>();	// ale użycie skrótu nie działa 
+			SomeClass<int> someClass = new SomeClass<int>();                // działa dobrze (brak błędu)
+			SomeClass<string> someClass = new SomeClass<string>();		// zgodnie z potrzebą T musi być numeryczne (zamierzony błąd)
+			SomeOtherClass<int> someOtherClass = new SomeOtherClass<int>();	// ale użycie skrótu nie działa (błąd)
 		}
 	}
 }
